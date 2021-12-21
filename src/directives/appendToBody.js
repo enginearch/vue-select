@@ -10,7 +10,7 @@ export default {
       let scrollX = window.scrollX || window.pageXOffset
       let scrollY = window.scrollY || window.pageYOffset
       el.unbindPosition = instance.calculatePosition(el, instance, {
-        width: width + 'px',
+        minWidth: width + 'px',
         left: scrollX + left + 'px',
         top: scrollY + top + height + 'px',
       })
